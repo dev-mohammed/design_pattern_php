@@ -1,0 +1,16 @@
+{
+    "name": "dola/design_pattern_php",
+    "description": "This is design pattern tutorial",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "mohamed adel",
+            "email": "adel@buseet.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "App\\" : "src/"
+        }
+    }
+}
