@@ -1,9 +1,14 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-use App\OOP\PHP\Employee;
+use App\OOP\Patterns\Creational\Builder\Builders\ComputerCSBuilder;
+use App\OOP\Patterns\Creational\Builder\Builders\ComputerXLBuilder;
+use App\OOP\Patterns\Creational\Builder\Director;
 
-$dola = new Employee('dola' , 29 , 100);
-
-var_dump($dola);
+$director = new Director(new ComputerCSBuilder());
+$computer = $director->makeComputer();
+var_dump($director);
+$director->changeBuilder(new ComputerXLBuilder());
+$computer = $director->makeComputer();
+var_dump($director);
