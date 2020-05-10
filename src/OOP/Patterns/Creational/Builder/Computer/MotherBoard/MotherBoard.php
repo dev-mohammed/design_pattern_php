@@ -13,22 +13,14 @@ use App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Sockets;
 
 class MotherBoard
 {
-    private CPU $cpu;
-    private RAM $ram;
-    private GPU $gpu;
-    private Sockets $sockets;
-    private NetworkCard $networkCard;
-    private Disk $disk;
+    private  $cpu;
+    private  $ram;
+    private  $gpu;
+    private  $sockets;
+    private  $networkCard;
+    private  $disk;
 
-    /**
-     * MotherBoard constructor.
-     * @param CPU $cpu
-     * @param RAM $ram
-     * @param GPU $gpu
-     * @param Sockets $sockets
-     * @param NetworkCard $networkCard
-     * @param Disk $disk
-     */
+
     public function __construct(CPU $cpu, RAM $ram, GPU $gpu, Sockets $sockets, NetworkCard $networkCard, Disk $disk)
     {
         $this->cpu         = $cpu;
@@ -42,7 +34,7 @@ class MotherBoard
     /**
      * @return CPU
      */
-    public function getCpu(): CPU
+    public function getCpu()
     {
         return $this->cpu;
     }
@@ -50,7 +42,7 @@ class MotherBoard
     /**
      * @return RAM
      */
-    public function getRam(): RAM
+    public function getRam()
     {
         return $this->ram;
     }
@@ -58,7 +50,7 @@ class MotherBoard
     /**
      * @return GPU
      */
-    public function getGpu(): GPU
+    public function getGpu()
     {
         return $this->gpu;
     }
@@ -66,7 +58,7 @@ class MotherBoard
     /**
      * @return Sockets
      */
-    public function getSockets(): Sockets
+    public function getSockets()
     {
         return $this->sockets;
     }
@@ -74,7 +66,7 @@ class MotherBoard
     /**
      * @return NetworkCard
      */
-    public function getNetworkCard(): NetworkCard
+    public function getNetworkCard()
     {
         return $this->networkCard;
     }
@@ -82,7 +74,7 @@ class MotherBoard
     /**
      * @return Disk
      */
-    public function getDisk(): Disk
+    public function getDisk()
     {
         return $this->disk;
     }

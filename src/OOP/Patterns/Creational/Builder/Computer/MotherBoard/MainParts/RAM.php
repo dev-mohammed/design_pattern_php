@@ -7,10 +7,10 @@ namespace App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
 class RAM
 {
 
-    private int $size;
+    private  $size;
     /**
      * CPU constructor.
-     * @param int $size
+     * @param  $size
      */
     public function __construct($size)
     {

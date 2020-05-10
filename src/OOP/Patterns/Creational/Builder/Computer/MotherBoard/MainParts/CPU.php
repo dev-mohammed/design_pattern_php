@@ -7,10 +7,10 @@ namespace App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
 class CPU
 {
 
-    private float $speed;
+    private  $speed;
     /**
      * CPU constructor.
-     * @param float $speed
+     * @param  $speed
      */
     public function __construct($speed)
     {

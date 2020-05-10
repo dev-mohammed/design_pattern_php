@@ -6,11 +6,11 @@ namespace App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
 
 class Sockets
 {
-    private array $sockets;
+    private  $sockets;
 
     /**
      * Sockets constructor.
-     * @param array $sockets
+     * @param  $sockets
      */
     public function __construct(array $sockets)
     {

@@ -8,7 +8,7 @@ use App\OOP\Patterns\Creational\Builder\Computer\CoolingSystem;
 
 class ComputerCS extends Computer implements ICoolingSystem
 {
-    private CoolingSystem $cs;
+    private  $cs;
 
     public function turnOn(): bool
     {

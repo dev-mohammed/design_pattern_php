@@ -9,8 +9,8 @@ use App\OOP\Patterns\Creational\Builder\Computer\UPS;
 
 class ComputerXL extends Computer implements ICoolingSystem , IPower
 {
-    private CoolingSystem $cs;
-    private UPS $ups;
+    private  $cs;
+    private  $ups;
 
     public function turnOn(): bool
     {

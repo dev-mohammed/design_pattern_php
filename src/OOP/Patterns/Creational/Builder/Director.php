@@ -9,11 +9,11 @@ use App\OOP\Patterns\Creational\Builder\Computer\Types\Computer;
 class Director
 {
 
-    private Builder $builder;
+    private  $builder;
 
     /**
      * Director constructor.
-     * @param Builder $builder
+     * @param  $builder
      */
     public function __construct(Builder $builder)
     {

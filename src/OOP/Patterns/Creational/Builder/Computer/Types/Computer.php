@@ -11,10 +11,10 @@ use App\OOP\Patterns\Creational\Builder\Computer\Mouse;
 
 abstract class Computer
 {
-    protected MotherBoard $motherBoard;
-    protected Keyboard $keyboard;
-    protected Mouse $mouse;
-    protected Monitor $monitor;
+    protected  $motherBoard;
+    protected  $keyboard;
+    protected  $mouse;
+    protected  $monitor;
 
     abstract public function turnOn(): bool;
 
@@ -57,7 +57,7 @@ abstract class Computer
 
     public function dashboard(): string
     {
-        return '';
+        return 'dashboard';
     }
 
 

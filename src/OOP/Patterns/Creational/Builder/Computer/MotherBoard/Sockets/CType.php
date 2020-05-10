@@ -7,11 +7,11 @@ namespace App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\Sockets;
 class CType
 {
 
-    private bool $withVideoTransfer;
+    private  $withVideoTransfer;
 
     /**
      * CType constructor.
-     * @param bool $withVideoTransfer
+     * @param  $withVideoTransfer
      */
     public function __construct(bool $withVideoTransfer)
     {

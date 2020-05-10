@@ -6,7 +6,7 @@ namespace App\OOP\Patterns\Creational\Builder\Computer;
 
 class Monitor
 {
-    private string $resolution;
+    private  $resolution;
 
     /**
      * Monitor constructor.

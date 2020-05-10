@@ -14,20 +14,20 @@ use App\OOP\Patterns\Creational\Builder\Computer\UPS;
 
 abstract class Builder
 {
-    protected Computer $computer;
+    protected  $computer;
 
-    abstract protected function buildMotherBoard(): MotherBoard;
+    abstract protected function buildMotherBoard();
 
-    abstract protected function buildKeyboard(): Keyboard;
+    abstract protected function buildKeyboard();
 
-    abstract protected function buildMouse(): Mouse;
+    abstract protected function buildMouse();
 
-    abstract protected function buildMonitor(): Monitor;
+    abstract protected function buildMonitor();
 
-    abstract protected function buildCoolingSystem(): CoolingSystem;
+    abstract protected function buildCoolingSystem();
 
-    abstract protected function buildUPS(): UPS;
+    abstract protected function buildUPS();
 
-    abstract public function getComputer() : Computer;
+    abstract public function getComputer();
 
 }

@@ -7,11 +7,11 @@ namespace App\OOP\Patterns\Creational\Builder\Computer;
 class CoolingSystem
 {
 
-    private int $lowTempLimit;
+    private  $lowTempLimit;
 
     /**
      * CoolingSystem constructor.
-     * @param int $lowTempLimit
+     * @param  $lowTempLimit
      */
     public function __construct(int $lowTempLimit)
     {

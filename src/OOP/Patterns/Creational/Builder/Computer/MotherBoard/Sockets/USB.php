@@ -7,11 +7,11 @@ namespace App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\Sockets;
 class USB
 {
 
-    private string $version;
+    private  $version;
 
     /**
      * USB constructor.
-     * @param string $version
+     * @param  $version
      */
     public function __construct(string $version)
     {

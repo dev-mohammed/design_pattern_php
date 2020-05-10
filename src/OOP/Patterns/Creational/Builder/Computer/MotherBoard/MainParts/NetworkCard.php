@@ -7,11 +7,11 @@ namespace App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
 class NetworkCard
 {
 
-    private int $category;
+    private  $category;
 
     /**
      * NetworkCard constructor.
-     * @param int $category
+     * @param  $category
      */
     public function __construct(int $category)
     {

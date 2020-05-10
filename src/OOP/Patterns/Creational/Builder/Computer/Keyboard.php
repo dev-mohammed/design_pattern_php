@@ -7,7 +7,7 @@ namespace App\OOP\Patterns\Creational\Builder\Computer;
 class Keyboard
 {
 
-    private bool $utfSupport;
+    private  $utfSupport;
 
     /**
      * Keyboard constructor.

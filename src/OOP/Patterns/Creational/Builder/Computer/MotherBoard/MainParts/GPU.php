@@ -6,11 +6,11 @@ namespace App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
 
 class GPU
 {
-    private int $size;
+    private  $size;
 
     /**
      * GPU constructor.
-     * @param int $size
+     * @param  $size
      */
     public function __construct(int $size)
     {

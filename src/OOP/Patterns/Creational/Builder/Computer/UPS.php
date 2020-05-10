@@ -6,7 +6,7 @@ namespace App\OOP\Patterns\Creational\Builder\Computer;
 
 class UPS
 {
-    private int $duration;
+    private  $duration;
 
     /**
      * UPS constructor.

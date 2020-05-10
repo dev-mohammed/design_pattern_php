@@ -25,7 +25,7 @@ use App\OOP\Patterns\Creational\Builder\Computer\UPS;
 class ComputerCSBuilder extends Builder
 {
 
-    protected function buildMotherBoard(): MotherBoard
+    protected function buildMotherBoard()
     {
         $cpu         = new CPU(2.8);
         $ram         = new RAM(16);
@@ -45,32 +45,32 @@ class ComputerCSBuilder extends Builder
         );
     }
 
-    protected function buildKeyboard(): Keyboard
+    protected function buildKeyboard()
     {
         return new Keyboard(true);
     }
 
-    protected function buildMouse(): Mouse
+    protected function buildMouse()
     {
         return new Mouse(false);
     }
 
-    protected function buildMonitor(): Monitor
+    protected function buildMonitor()
     {
-        new Monitor('1920 FHD');
+       return  new Monitor('1920 FHD');
     }
 
-    protected function buildCoolingSystem(): CoolingSystem
+    protected function buildCoolingSystem()
     {
         return new CoolingSystem(5);
     }
 
-    protected function buildUPS(): UPS
+    protected function buildUPS()
     {
         return new UPS(96);
     }
 
-    public function getComputer(): Computer
+    public function getComputer()
     {
         $computer = new ComputerCS();
         $computer->setKeyboard($this->buildKeyboard());

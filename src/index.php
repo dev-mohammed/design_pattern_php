@@ -8,7 +8,7 @@ use App\OOP\Patterns\Creational\Builder\Director;
 
 $director = new Director(new ComputerCSBuilder());
 $computer = $director->makeComputer();
-var_dump($director);
+var_dump($computer);
 $director->changeBuilder(new ComputerXLBuilder());
 $computer = $director->makeComputer();
-var_dump($director);
+var_dump($computer);

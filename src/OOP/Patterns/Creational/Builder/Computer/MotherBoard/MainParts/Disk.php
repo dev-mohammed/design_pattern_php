@@ -7,11 +7,11 @@ namespace App\OOP\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
 class Disk
 {
 
-    private string $type;
+    private  $type;
 
     /**
      * Disk constructor.
-     * @param string $type
+     * @param  $type
      */
     public function __construct(string $type)
     {

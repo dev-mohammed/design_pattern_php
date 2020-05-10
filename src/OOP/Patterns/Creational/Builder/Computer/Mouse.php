@@ -6,7 +6,7 @@ namespace App\OOP\Patterns\Creational\Builder\Computer;
 
 class Mouse
 {
-    private bool $withExtraUtilities;
+    private  $withExtraUtilities;
 
     /**
      * Mouse constructor.
