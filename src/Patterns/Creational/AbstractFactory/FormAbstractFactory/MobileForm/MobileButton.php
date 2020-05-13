@@ -15,6 +15,6 @@ class MobileButton extends AbstractButton
 
     public function render(): void
     {
-        echo "Mobile Button";
+        echo "Mobile Button\n";
     }
 }

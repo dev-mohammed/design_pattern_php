@@ -36,7 +36,7 @@ abstract class AbstractWindow
     public function render(): string
     {
         $renderedComponents = implode('', array_map(array($this, 'componentsRender'), $this->components));
-        return "Welcome to our GUI form\n{$renderedComponents}";
+        return "Welcome to our GUI form \n{$renderedComponents}";
 
     }
 

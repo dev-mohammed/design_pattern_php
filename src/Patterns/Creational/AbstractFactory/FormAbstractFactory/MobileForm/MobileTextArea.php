@@ -15,6 +15,6 @@ class MobileTextArea extends AbstractTextArea
 
     public function render(): void
     {
-        echo "Mobile Text Area";
+        echo "Mobile Text Area\n";
     }
 }

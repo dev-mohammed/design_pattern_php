@@ -15,6 +15,6 @@ class MobileTextInput extends AbstractTextInput
 
     public function render(): void
     {
-        echo "Mobile Text Input";
+        echo "Mobile Text Input\n";
     }
 }
