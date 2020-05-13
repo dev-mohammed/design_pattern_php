@@ -1,9 +1,16 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-use App\OOP\PHP\Employee;
+use App\Patterns\Creational\Singleton\AppSettings;
 
-$dola = new Employee('dola' , 29 , 100);
+$settings = AppSettings::getInstance();
+var_dump($settings::getConfig('Database'));
 
-var_dump($dola);
+$settings2 = AppSettings::getInstance();
+var_dump($settings::getConfig('Cache'));
+
+
+//$settings3 = clone $settings; //prevent clone method
+
+var_dump($settings, $settings2);
