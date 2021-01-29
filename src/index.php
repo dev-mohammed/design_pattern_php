@@ -1,9 +1,15 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-use App\OOP\PHP\Employee;
 
-$dola = new Employee('dola' , 29 , 100);
+use App\Patterns\Creational\AbstractFactory\FormAbstractFactory\MobileForm\MobileFormFactory;
+use App\Patterns\Creational\AbstractFactory\FormAbstractFactory\WebForm\WebFormFactory;
+use App\Patterns\Creational\AbstractFactory\FormAbstractFactory\GUIClient;
 
-var_dump($dola);
+
+$client = new GUIClient(new WebFormFactory());
+echo $client->createForm();
+$client = new GUIClient(new MobileFormFactory());
+echo $client->createForm();
+
